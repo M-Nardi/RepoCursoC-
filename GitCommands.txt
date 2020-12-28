@@ -1,0 +1,52 @@
+git  init -> cria um repo e adiciona branch master
+
+$ git config --global user.name "M-nardi"    -> ideentificacao
+$ git config --global user.email "marcellonardi09@gmail.com"
+
+commit -> salvar uma versáo
+
+git status -> arquivos configurados para commitar que nao estao rastreaveis
+git add . -> coloca os arquivos modificados na area de stage, pronto para ser comitado
+
+git commit -m "Mensagem do versionamento"
+se esquecer de por a msg e entrar no editor VIM -> apeerte ESC e digite :q!
+
+git log -> mostram os commits feitos por X usuario em X data
+git log --oneline -> mostra simplificado
+
+-------------
+''E se eu me perder e quiser voltar ao commit da versao atual?
+
+git clean -df
+git checkout -- .
+-------------
+
+''E se eu quiser desfazer meu ultimo commit e alterar ele?
+
+git reset --soft HEAD~1 -> desfaz o commit mas nao volta para a versao anterior
+
+git reset --hard HEAD~1 -> desfaz o commit e volta para a versão anterior
+-------------
+
+''Quero verificar o código de versões anteriores e poder voltar para o commit atual novamente
+
+git checkout <código do commit> -> vai para a versão escolhida
+
+git checkout <branch> -> volta para a versão atual
+
+-------------------
+GITHUB
+-Associar repositorio local com o remoto -> git remote add origin https://github.com/M-Nardi/CriandoRepositorioRemotoGIT.git
+
+-Subir o repositorio local para o GITHUB -> git push -u origin <branch>
+
+-Subir as alterações (commits) para o GITHUB -> git push -u
+-------------
+
+-Transferindo repositório do GITHUB para repositorio local -> git clone <URL>
+
+-Puxando do GITHUB modificações feitas do projeto por outras pessoas -> git pull origin <branch>
+
+
+
+
