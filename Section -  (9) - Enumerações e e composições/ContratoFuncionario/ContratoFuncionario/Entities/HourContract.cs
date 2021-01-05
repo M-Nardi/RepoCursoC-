@@ -25,7 +25,7 @@ namespace ContratoFuncionario.Entities
 
         public double TotalValue()
         {
-            double total = (ValuePerHour * Hours) + 1200;
+            double total = ValuePerHour * Hours;
             return total;
         }
 
