@@ -29,9 +29,10 @@ namespace CarRent
             double dayPrice = double.Parse(Console.ReadLine());
 
             CarRental rent = new CarRental(pickUpDate, returnDate, new Vehicle(carModel));
-
+            
             RentalService rentalService = new RentalService(hourPrice, dayPrice);
-
+            
+            
             rentalService.ProcessInvoice(rent);
 
             Console.WriteLine("INVOICE:");
